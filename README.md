@@ -17,6 +17,7 @@ openssl genrsa 2048 | tee priv_key.pem | openssl rsa -outform der | openssl base
 ```
 
 The parts of this command:
+
 `openssl genrsa 2048` generates a 2048-bit RSA key. The output is passed to
 
 `tee priv_key.pem`, which writes the key to the `priv_key.pem` file, and passes the key to
@@ -40,7 +41,7 @@ Copy the contents of the `record.txt` file and add it as a `TXT` record to your 
 
 ### Updating the Code
 
-Find the lines in `src/index.ts` that are
+Find the lines in [`src/index.ts`](https://github.com/maggie-j-liu/mail/blob/main/src/index.ts) that are
 ```ts
             to: [
               {
