@@ -41,7 +41,7 @@ Copy the contents of the `record.txt` file and add it as a `TXT` record to your 
 
 ### Updating the Code
 
-Find the lines in [`src/index.ts`](https://github.com/maggie-j-liu/mail/blob/main/src/index.ts) that are
+Find these lines in [`src/index.ts`](https://github.com/maggie-j-liu/mail/blob/main/src/index.ts):
 ```ts
             to: [
               {
@@ -50,7 +50,9 @@ Find the lines in [`src/index.ts`](https://github.com/maggie-j-liu/mail/blob/mai
             ],
 ```
 
-and
+```ts
+            dkim_domain: "", // add your domain
+```
 
 ```ts
         from: {
@@ -58,7 +60,7 @@ and
         },
 ```
 
-and add in your `to` and `from` email addresses.
+and add in your `to` and `from` email addresses, as well as the domain you are sending from.
 
 ## Running
 

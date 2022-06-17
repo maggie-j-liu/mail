@@ -18,7 +18,7 @@ export default {
                 email: "", // add your to email here
               },
             ],
-            dkim_domain: "src.ink",
+            dkim_domain: "", // add your domain
             dkim_selector: "mailchannels",
             dkim_private_key: env.DKIM_PRIVATE_KEY.replace(/\n/g, ""),
           },
