@@ -1,6 +1,6 @@
-# Cloudflare + Mailchannels Email Sending with DKIM
+# Cloudflare + MailChannels Email Sending with DKIM
 
-Mailchannels [allows free email sending](https://blog.mailchannels.com/mailchannels-enables-free-email-sending-for-cloudflare-workers-customers) using a Cloudflare Worker. This code adapts the example provided in the article to implement DKIM signing.
+MailChannels [allows free email sending](https://blog.mailchannels.com/mailchannels-enables-free-email-sending-for-cloudflare-workers-customers) using a Cloudflare Worker. This code adapts the example provided in the article to implement DKIM signing.
 
 ## Setup
 
