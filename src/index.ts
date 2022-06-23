@@ -4,7 +4,7 @@ interface Env {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    console.log(env.DKIM_PRIVATE_KEY);
+    // console.log(env.DKIM_PRIVATE_KEY);
     let send_request = new Request("https://api.mailchannels.net/tx/v1/send", {
       method: "POST",
       headers: {
@@ -20,7 +20,7 @@ export default {
             ],
             dkim_domain: "", // add your domain
             dkim_selector: "mailchannels",
-            dkim_private_key: env.DKIM_PRIVATE_KEY.replace(/\n/g, ""),
+            dkim_private_key: env.DKIM_PRIVATE_KEY,
           },
         ],
         from: {
